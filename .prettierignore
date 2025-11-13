@@ -1,0 +1,25 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.nuxt
+.output
+dist
+.vercel
+.netlify
+
+# Logs
+*.log
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Environment files
+.env
+.env.*
+
+# Cache
+.cache
+.DS_Store

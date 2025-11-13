@@ -1,0 +1,36 @@
+import { Routes } from '#shared/constants/routes';
+
+export const useHeader = () => {
+  const { t } = useI18n();
+  const isMenuOpened = useState('header:menuOpened', () => false);
+
+  const toggleMenu = () => {
+    isMenuOpened.value = !isMenuOpened.value;
+  };
+
+  const closeMenu = () => {
+    isMenuOpened.value = false;
+  };
+
+  const links = computed<NavLink[]>(() => [
+    {
+      text: t('header.links.home'),
+      href: Routes.home.get(),
+    },
+    {
+      text: t('header.links.contacts'),
+      href: Routes.contacts.get(),
+    },
+    {
+      text: t('header.links.skills'),
+      href: Routes.skills.get(),
+    },
+  ]);
+
+  return {
+    isMenuOpened,
+    toggleMenu,
+    closeMenu,
+    links,
+  };
+};

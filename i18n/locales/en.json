@@ -1,0 +1,13 @@
+{
+  "hello": "Hello World!",
+  "header": {
+    "links": {
+      "home": "Home",
+      "contacts": "Contacts",
+      "skills": "Skills"
+    }
+  },
+  "error-page": {
+    "home": "Go to Home"
+  }
+}

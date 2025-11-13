@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@theme {
+  /* Цветовая палитра для светлой и темной темы */
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-card: #f9fafb;
+  --color-card-foreground: #0a0a0a;
+  --color-primary: #00dc82;
+  --color-primary-foreground: #0a0a0a;
+  --color-secondary: #64748b;
+  --color-secondary-foreground: #ffffff;
+  --color-accent: #d1fae5;
+  --color-accent-foreground: #064e3b;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #00dc82;
+}
+
+@layer base {
+  html {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  /* Темная тема */
+  .dark {
+    --color-background: #0a0a0a;
+    --color-foreground: #f9fafb;
+    --color-card: #18181b;
+    --color-card-foreground: #f9fafb;
+    --color-primary: #00dc82;
+    --color-primary-foreground: #0a0a0a;
+    --color-secondary: #71717a;
+    --color-secondary-foreground: #ffffff;
+    --color-accent: #064e3b;
+    --color-accent-foreground: #d1fae5;
+    --color-muted: #27272a;
+    --color-muted-foreground: #a1a1aa;
+    --color-border: #27272a;
+    --color-input: #27272a;
+    --color-ring: #00dc82;
+  }
+
+  /* Поддержка системной темы */
+  @media (prefers-color-scheme: dark) {
+    html:not(.light) {
+      --color-background: #0a0a0a;
+      --color-foreground: #f9fafb;
+      --color-card: #18181b;
+      --color-card-foreground: #f9fafb;
+      --color-primary: #00dc82;
+      --color-primary-foreground: #0a0a0a;
+      --color-secondary: #71717a;
+      --color-secondary-foreground: #ffffff;
+      --color-accent: #064e3b;
+      --color-accent-foreground: #d1fae5;
+      --color-muted: #27272a;
+      --color-muted-foreground: #a1a1aa;
+      --color-border: #27272a;
+      --color-input: #27272a;
+      --color-ring: #00dc82;
+    }
+  }
+}
+
+@layer utilities {
+  /* Утилиты для работы с темой */
+  .bg-background {
+    background-color: var(--color-background);
+  }
+
+  .bg-foreground {
+    background-color: var(--color-foreground);
+  }
+
+  .bg-card {
+    background-color: var(--color-card);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-secondary {
+    background-color: var(--color-secondary);
+  }
+
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  .bg-muted {
+    background-color: var(--color-muted);
+  }
+
+  .text-background {
+    color: var(--color-background);
+  }
+
+  .text-foreground {
+    color: var(--color-foreground);
+  }
+
+  .text-card-foreground {
+    color: var(--color-card-foreground);
+  }
+
+  .text-primary {
+    color: var(--color-primary);
+  }
+
+  .text-primary-foreground {
+    color: var(--color-primary-foreground);
+  }
+
+  .text-secondary {
+    color: var(--color-secondary);
+  }
+
+  .text-secondary-foreground {
+    color: var(--color-secondary-foreground);
+  }
+
+  .text-accent-foreground {
+    color: var(--color-accent-foreground);
+  }
+
+  .text-muted-foreground {
+    color: var(--color-muted-foreground);
+  }
+
+  .border-border {
+    border-color: var(--color-border);
+  }
+
+  .border-input {
+    border-color: var(--color-input);
+  }
+
+  .ring-ring {
+    --tw-ring-color: var(--color-ring);
+  }
+}
