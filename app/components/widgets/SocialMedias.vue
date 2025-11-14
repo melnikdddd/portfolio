@@ -1,3 +1,30 @@
 <template>
-
+  <div class="flex gap-4">
+    <AppIconLink
+      icon="i-tabler-brand-whatsapp"
+      href="https://wa.me/your-number"
+      class="hover:text-green-600"
+      aria-label="WhatsApp"
+    />
+    <AppIconLink
+      icon="i-tabler-brand-telegram"
+      href="https://t.me/your-username"
+      class="hover:text-blue-400"
+      aria-label="Telegram"
+    />
+    <AppIconLink
+      icon="i-tabler-brand-linkedin"
+      href="https://linkedin.com/in/your-profile"
+      class="hover:text-blue-600"
+      aria-label="LinkedIn"
+    />
+    <AppIconLink
+      icon="i-tabler-brand-instagram"
+      href="https://instagram.com/your-username"
+      class="hover:text-pink-400"
+      aria-label="Instagram"
+    />
+  </div>
 </template>
+<script setup lang="ts">
+</script>

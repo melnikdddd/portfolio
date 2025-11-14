@@ -29,6 +29,11 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
     {
+      path: '~/components/ui/cards',
+      pathPrefix: false,
+      prefix: 'App',
+    },
+    {
       path: '~/components/ui/buttons',
       pathPrefix: false,
     },

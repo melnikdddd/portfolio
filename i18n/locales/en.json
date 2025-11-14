@@ -2,7 +2,7 @@
   "hello": "Hello World!",
   "header": {
     "links": {
-      "home": "Home",
+      "resume": "Resume",
       "contacts": "Contacts",
       "skills": "Skills"
     }

@@ -1,3 +1,3 @@
 <template>
-  hello world!
+  <div class="flex flex-col h-full"></div>
 </template>

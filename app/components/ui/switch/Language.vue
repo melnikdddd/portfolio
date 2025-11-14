@@ -33,10 +33,11 @@ const selectLocale = (newLocale: 'ua' | 'en') => {
 .lang-item {
   cursor: pointer;
   transition: color 0.2s;
+  color: var(--color-muted-foreground);
 }
 
 .lang-item:not(.active-lang):hover {
-  color: color-mix(in srgb, var(--color-primary) 80%, transparent);
+  color: var(--color-foreground);
 }
 
 .active-lang {

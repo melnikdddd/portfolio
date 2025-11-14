@@ -2,7 +2,7 @@
   "hello": "Привіт світ!",
   "header": {
     "links": {
-      "home": "Головна",
+      "resume": "Резюме",
       "contacts": "Контакти",
       "skills": "Навички"
     }

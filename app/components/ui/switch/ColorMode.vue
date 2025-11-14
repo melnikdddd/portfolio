@@ -1,4 +1,5 @@
 <template>
-  <UColorModeSwitch />
+  <UColorModeSwitch color="neutral" size="xl" />
 </template>
-<script setup lang="ts"></script>
+
+

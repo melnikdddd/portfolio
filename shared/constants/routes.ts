@@ -3,7 +3,7 @@ export const Routes = {
     get: () => '/',
   },
   contacts: {
-    get: () => '/info/contact',
+    get: () => '/info/contacts',
   },
   skills: {
     get: () => '/info/skills',

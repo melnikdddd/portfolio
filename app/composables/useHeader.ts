@@ -14,7 +14,7 @@ export const useHeader = () => {
 
   const links = computed<NavLink[]>(() => [
     {
-      text: t('header.links.home'),
+      text: t('header.links.resume'),
       href: Routes.home.get(),
     },
     {

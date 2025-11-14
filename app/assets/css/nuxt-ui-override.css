@@ -1,0 +1,108 @@
+/* Переопределение цветов Nuxt UI на синий #2C5282 для светлой темы */
+:root {
+  --ui-primary: #2c5282;
+  --ui-primary-50: #ebf4ff;
+  --ui-primary-100: #d1e7ff;
+  --ui-primary-200: #b3d7ff;
+  --ui-primary-300: #84c1ff;
+  --ui-primary-400: #53a8ff;
+  --ui-primary-500: #2c5282;
+  --ui-primary-600: #1e3a8a;
+  --ui-primary-700: #1e40af;
+  --ui-primary-800: #1e3a8a;
+  --ui-primary-900: #1e3a8a;
+
+  /* Сепараторы для светлой темы */
+  --ui-border: #d1d5db;
+}
+
+/* Темная тема - яркий синий #5B9FEF для лучшего контраста на сером фоне */
+.dark {
+  --ui-primary: #5B9FEF;
+  --ui-primary-50: #f0f9ff;
+  --ui-primary-100: #e0f2fe;
+  --ui-primary-200: #bae6fd;
+  --ui-primary-300: #7dd3fc;
+  --ui-primary-400: #38bdf8;
+  --ui-primary-500: #5B9FEF;
+  --ui-primary-600: #0284c7;
+  --ui-primary-700: #0369a1;
+  --ui-primary-800: #075985;
+  --ui-primary-900: #0c4a6e;
+
+  /* Серый фон как у Stake */
+  --ui-bg: #1a1d28;
+  --ui-bg-elevated: #212435;
+
+  /* Сепараторы для темной темы - четко видны */
+  --ui-border: #2d3142;
+  --ui-border-accented: #3d4254;
+}
+
+/* Стили для сепараторов - делаем их четко видимыми в обеих темах */
+[data-nuxt-separator],
+[role="separator"],
+.separator,
+hr {
+  background-color: var(--color-border) !important;
+  border-color: var(--color-border) !important;
+  opacity: 1 !important;
+}
+
+/* Вертикальный сепаратор */
+[data-nuxt-separator][data-orientation="vertical"],
+[role="separator"][data-orientation="vertical"] {
+  width: 1px;
+  min-height: 100%;
+}
+
+/* Горизонтальный сепаратор */
+[data-nuxt-separator][data-orientation="horizontal"],
+[role="separator"][data-orientation="horizontal"],
+hr {
+  height: 1px;
+  min-width: 100%;
+}
+
+/* Дополнительная специфичность для Nuxt UI компонентов */
+.dark [data-nuxt-separator],
+.dark [role="separator"],
+.dark hr {
+  background-color: var(--color-border) !important;
+  border-color: var(--color-border) !important;
+}
+
+/* Стили для NavLink компонента - hover эффекты */
+.nav-link-button {
+  color: var(--color-foreground);
+  transition: all 0.2s ease;
+}
+
+.nav-link-button:hover {
+  background-color: var(--color-accent) !important;
+  color: var(--color-primary) !important;
+  transform: translateY(-1px);
+}
+
+/* Активная ссылка - без hover */
+.nav-link-active {
+  background-color: var(--color-primary) !important;
+  color: var(--color-primary-foreground) !important;
+}
+
+/* Hover эффекты для социальных иконок */
+.icon-link.hover\:text-green-600:hover {
+  color: #16a34a !important;
+}
+
+.icon-link.hover\:text-blue-400:hover {
+  color: #60a5fa !important;
+}
+
+.icon-link.hover\:text-blue-600:hover {
+  color: #2563eb !important;
+}
+
+.icon-link.hover\:text-pink-400:hover {
+  color: #f472b6 !important;
+}
