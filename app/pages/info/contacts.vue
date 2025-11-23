@@ -14,7 +14,7 @@
               href="mailto:Da.melnik2011@gmail.com"
               class="text-blue-600 dark:text-blue-400 hover:underline font-medium text-lg"
             >
-              danylo.melnyk.dev@gmail.com
+              Da.melnik2011@gmail.com
             </a>
           </div>
         </template>

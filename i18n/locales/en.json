@@ -104,6 +104,7 @@
     "about-me": "About Me",
     "about-me-text": "I’m a Full-Stack Web Developer with 3+ years of experience building scalable, high-performance web applications using Next.js, Nuxt.js, and NestJS. I specialize in delivering production-ready solutions that combine modern frontend frameworks with solid backend architecture.\n\n\nKey Services:\n- Full-stack web development with Next.js, Nuxt.js, React, Vue, and NestJS\n- API development and integration: REST, GraphQL, WebSockets\n- Secure authentication and authorization: JWT, OAuth2, role-based access\n- Database design and management: PostgreSQL, MongoDB, MySQL, Prisma, TypeORM\n- Performance optimization: SSR, SSG, caching, SEO, web performance tuning\n- Modern frontend UI/UX: responsive design, component-based architecture, state management (Redux, Pinia, Zustand)\n- Collaboration in Agile/Scrum teams to deliver fast, reliable features\n\nTech Stack: TypeScript, JavaScript (ES6+), React, Vue, Next.js, Nuxt.js, NestJS, Node.js, PostgreSQL, MongoDB, Docker, AWS\n\nI’m looking for remote or hybrid roles where I can contribute to ambitious web projects, deliver clean, maintainable code, and help teams scale products efficiently.",
     "view-all-skills": "View All Skills",
-    "contact-me-link": "Contact Me"
+    "contact-me-link": "Contact Me",
+    "view-source-code": "View source code"
   }
 }

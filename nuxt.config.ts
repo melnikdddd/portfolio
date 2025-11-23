@@ -117,8 +117,13 @@ export default defineNuxtConfig({
     devProxy: {},
     prerender: {
       crawlLinks: true,
-      routes: ['/'],
+      routes: ['/', '/info/contacts', '/info/skills'],
     },
+  },
+  routeRules: {
+    '/': { prerender: true },
+    '/info/contacts': { prerender: true },
+    '/info/skills': { prerender: true },
   },
   ssr: true,
   app: {

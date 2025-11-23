@@ -2,33 +2,27 @@
   <section class="flex gap-4">
     <AppIconLink
       icon="i-tabler-brand-github"
-      href="https://t.me/your-username"
+      href="https://github.com/melnikdddd"
       class="hover:text-gray-400"
       aria-label="Github"
     />
     <AppIconLink
       icon="i-tabler-brand-whatsapp"
-      href="https://wa.me/your-number"
+      href="https://wa.me/+380686243722"
       class="hover:text-green-600"
       aria-label="WhatsApp"
     />
     <AppIconLink
       icon="i-tabler-brand-telegram"
-      href="https://t.me/your-username"
+      href="https://t.me/melnykdddd"
       class="hover:text-blue-400"
       aria-label="Telegram"
     />
     <AppIconLink
       icon="i-tabler-brand-linkedin"
-      href="https://linkedin.com/in/your-profile"
+      href="https://www.linkedin.com/in/danylo-melnyk-513062297"
       class="hover:text-blue-600"
       aria-label="LinkedIn"
-    />
-    <AppIconLink
-      icon="i-tabler-brand-instagram"
-      href="https://instagram.com/your-username"
-      class="hover:text-pink-400"
-      aria-label="Instagram"
     />
   </section>
 </template>

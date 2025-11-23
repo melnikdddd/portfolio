@@ -8,5 +8,5 @@
 </template>
 
 <script setup lang="ts">
-import { Routes } from '#shared/constants/routes.js';
+import { Routes } from '#shared/constants/routes';
 </script>

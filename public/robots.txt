@@ -1,2 +1,6 @@
-User-Agent: *
-Disallow:
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://danylo-melnyk.dev/sitemap.xml
