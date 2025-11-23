@@ -67,7 +67,7 @@ export default defineNuxtConfig({
         file: 'ua.json',
       },
     ],
-    langDir: 'locales/',
+    langDir: 'locales',
     defaultLocale: 'en',
     detectBrowserLanguage: {
       useCookie: true,
@@ -115,6 +115,33 @@ export default defineNuxtConfig({
   },
   nitro: {
     devProxy: {},
+    prerender: {
+      crawlLinks: true,
+      routes: ['/'],
+    },
+  },
+  ssr: true,
+  app: {
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Danylo Melnyk - Full-Stack Developer',
+      meta: [
+        { name: 'description', content: 'Full-Stack Web Developer with 3+ years of experience building scalable, high-performance web applications using Next.js, Nuxt.js, and NestJS.' },
+        { name: 'keywords', content: 'Full-Stack Developer, Web Developer, Next.js, Nuxt.js, NestJS, React, Vue, TypeScript, JavaScript, Portfolio' },
+        { name: 'author', content: 'Danylo Melnyk' },
+        { property: 'og:title', content: 'Danylo Melnyk - Full-Stack Developer' },
+        { property: 'og:description', content: 'Full-Stack Web Developer with 3+ years of experience building scalable, high-performance web applications.' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:locale', content: 'en_US' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'Danylo Melnyk - Full-Stack Developer' },
+        { name: 'twitter:description', content: 'Full-Stack Web Developer with 3+ years of experience.' },
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      ],
+    },
   },
   debug: false,
 });

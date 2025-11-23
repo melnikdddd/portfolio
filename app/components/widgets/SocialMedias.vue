@@ -1,5 +1,11 @@
 <template>
-  <div class="flex gap-4">
+  <section class="flex gap-4">
+    <AppIconLink
+      icon="i-tabler-brand-github"
+      href="https://t.me/your-username"
+      class="hover:text-gray-400"
+      aria-label="Github"
+    />
     <AppIconLink
       icon="i-tabler-brand-whatsapp"
       href="https://wa.me/your-number"
@@ -24,7 +30,7 @@
       class="hover:text-pink-400"
       aria-label="Instagram"
     />
-  </div>
+  </section>
 </template>
 <script setup lang="ts">
 </script>

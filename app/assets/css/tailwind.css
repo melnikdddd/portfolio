@@ -19,6 +19,10 @@
     --color-input: #e2e8f0;
     --color-ring: #2c5282;
 
+    /* Card border colors - основные цвета для подводки карточек */
+    --color-card-border-primary: #2c5282;
+    --color-card-border-secondary: #5a67d8;
+
     /* Header акцентные цвета - чуть темнее основного фона */
     --color-header-bg: #f7fafc;
     --color-header-border: #e2e8f0;
@@ -60,6 +64,10 @@
     --color-input: #2a2d3a;
     --color-ring: #5B9FEF;
 
+    /* Card border colors - основные цвета для подводки карточек */
+    --color-card-border-primary: #5B9FEF;
+    --color-card-border-secondary: #7c3aed;
+
     /* Header акцентные цвета - темнее основного фона */
     --color-header-bg: #13151f;
     --color-header-border: #2d3142;
@@ -88,6 +96,10 @@
       --color-border: #2d3142;
       --color-input: #2a2d3a;
       --color-ring: #5B9FEF;
+
+      /* Card border colors - основные цвета для подводки карточек */
+      --color-card-border-primary: #5B9FEF;
+      --color-card-border-secondary: #7c3aed;
 
       /* Header акцентные цвета - темнее основного фона */
       --color-header-bg: #13151f;
@@ -177,6 +189,23 @@
 
   .ring-ring {
     --tw-ring-color: var(--color-ring);
+  }
+
+  /* Card border utilities */
+  .border-card-primary {
+    border-color: var(--color-card-border-primary);
+  }
+
+  .border-card-secondary {
+    border-color: var(--color-card-border-secondary);
+  }
+
+  .text-card-border-primary {
+    color: var(--color-card-border-primary);
+  }
+
+  .text-card-border-secondary {
+    color: var(--color-card-border-secondary);
   }
 
   /* Header утилиты */

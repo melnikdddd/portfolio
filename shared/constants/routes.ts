@@ -1,5 +1,5 @@
 export const Routes = {
-  home: {
+  resume: {
     get: () => '/',
   },
   contacts: {

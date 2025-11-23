@@ -8,7 +8,7 @@
         <p class="text-xl">
           {{ error.message }}
         </p>
-        <AppButtonLink :href="Routes.home.get()" :text="$t('error-page.home')" />
+        <AppButtonLink :href="Routes.resume.get()" :text="$t('error-page.home')" />
       </CenterContainer>
     </ContentContainer>
   </FullScreenContainer>

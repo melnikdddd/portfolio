@@ -1,5 +1,5 @@
 <template>
-  <Transition name="slide-down">
+  <Transition name="menu-slide">
     <div
       v-if="isMenuOpened"
       class="menu-container text-foreground"
@@ -62,16 +62,14 @@ onUnmounted(() => {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100vh;
-  height: 100dvh; /* Динамическая высота viewport для мобильных */
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   z-index: 50;
-  overflow: hidden; /* Запрет прокрутки */
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+  overflow: hidden;
 }
 
 .menu-content {
@@ -102,35 +100,5 @@ onUnmounted(() => {
   .menu-container {
     display: none;
   }
-}
-</style>
-
-<style>
-/* Transition стили без scoped для правильной работы Vue Transition */
-.slide-down-enter-active,
-.slide-down-leave-active {
-  transition:
-    transform 0.3s ease-out,
-    opacity 0.3s ease-out;
-}
-
-.slide-down-enter-from {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
-.slide-down-enter-to {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.slide-down-leave-from {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.slide-down-leave-to {
-  transform: translateY(-100%);
-  opacity: 0;
 }
 </style>

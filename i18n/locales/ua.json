@@ -9,5 +9,101 @@
   },
   "error-page": {
     "home": "На головну"
+  },
+  "contacts": {
+    "title": "Контакти",
+    "email": {
+      "title": "Email",
+      "description": "Зв'яжіться зі мною через email для будь-яких запитів або можливостей співпраці."
+    },
+    "social": {
+      "title": "Соціальні мережі",
+      "description": "Підключайтеся до мене в соціальних мережах, або пишіть у Telegram чи WhatsApp."
+    }
+  },
+  "skills": {
+    "title": "Навички",
+    "description": "Комплексний огляд моїх технічних навичок та експертизи у full-stack веб-розробці, включаючи frontend фреймворки, backend технології, бази даних та м'які навички."
+  },
+  "resume": {
+    "bio": {
+      "fullname": "Данило Мельник",
+      "description": "Full-Stack Developer {'|'} 3+ Years Experience {'|'} Next, Nest, Nuxt, TypeScript",
+      "work-experience": "Досвід роботи",
+      "education": "Освіта",
+      "location-title": "Локація",
+      "languages-title": "Мови",
+      "present": "Дотепер",
+      "work-types": "Формат роботи",
+      "schedule-types": "Графік"
+    },
+    "data": {
+      "workExperience": [
+        {
+          "position": "Full-Stack розробник",
+          "company": "Freelance",
+          "startDate": "Лют 2025",
+          "endDate": null
+        },
+        {
+          "position": "Full-Stack розробник",
+          "company": "Mithrill Development",
+          "startDate": "Вер 2024",
+          "endDate": "Лют 2025"
+        },
+        {
+          "position": "Full-Stack розробник",
+          "company": "Alpha Solutions",
+          "startDate": "Лис 2023",
+          "endDate": "Сер 2024"
+        },
+        {
+          "position": "Full-Stack розробник",
+          "company": "Freelance",
+          "startDate": "Кві 2022",
+          "endDate": "Вер 2023"
+        }
+      ],
+      "education": [
+        {
+          "university": "IT Step Computer Academy",
+          "degree": "Розробка програмного забезпечення",
+          "startDate": "Вер 2018",
+          "endDate": "Жов 2023"
+        },
+        {
+          "university": "Самоосвіта",
+          "degree": "Веб-розробка",
+          "startDate": "Тра 2021",
+          "endDate": "Кві 2022"
+        },
+        {
+          "university": "Магістр, Класичний приватний університет Запоріжжя",
+          "degree": "Факультет Економіка-Кібернетика",
+          "startDate": "Вер 2019",
+          "endDate": "Лип 2023"
+        }
+      ],
+      "location": {
+        "city": "Запоріжжя",
+        "country": "Україна",
+        "workTypes": ["Віддалено", "Офіс з можливістю переїзду"],
+        "scheduleTypes": ["Повна зайнятість", "Часткова зайнятість"]
+      },
+      "languages": [
+        {
+          "name": "Українська",
+          "level": "Рідна"
+        },
+        {
+          "name": "Англійська",
+          "level": "A2/B1"
+        }
+      ]
+    },
+    "about-me": "Про мене",
+    "about-me-text": "Я Full-Stack веб-розробник з 3+ роками досвіду створення масштабованих, високопродуктивних веб-додатків на Next.js, Nuxt.js та NestJS. Спеціалізуюся на розробці production-ready рішень, що поєднують сучасні frontend фреймворки з надійною backend архітектурою.\n\n\nОсновні послуги:\n- Full-stack веб-розробка з використанням Next.js, Nuxt.js, React, Vue та NestJS\n- Розробка та інтеграція API: REST, GraphQL, WebSockets\n- Безпечна автентифікація та авторизація: JWT, OAuth2, рольовий доступ\n- Проєктування та управління базами даних: PostgreSQL, MongoDB, MySQL, Prisma, TypeORM\n- Оптимізація продуктивності: SSR, SSG, кешування, SEO, налаштування веб-продуктивності\n- Сучасний frontend UI/UX: адаптивний дизайн, компонентна архітектура, управління станом (Redux, Pinia, Zustand)\n- Робота в Agile/Scrum командах для швидкої та надійної розробки функціоналу\n\nТехнологічний стек: TypeScript, JavaScript (ES6+), React, Vue, Next.js, Nuxt.js, NestJS, Node.js, PostgreSQL, MongoDB, Docker, AWS\n\nШукаю віддалену або гібридну роботу, де зможу брати участь у амбітних веб-проєктах, писати чистий, підтримуваний код та допомагати командам ефективно масштабувати продукти.",
+    "view-all-skills": "Переглянути всі навички",
+    "contact-me-link": "Зв'язатися зі мною"
   }
 }

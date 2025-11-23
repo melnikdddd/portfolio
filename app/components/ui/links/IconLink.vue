@@ -1,5 +1,5 @@
 <template>
-  <a
+  <NuxtLink
     :href="href"
     target="_blank"
     rel="noopener noreferrer"
@@ -7,7 +7,7 @@
     :aria-label="ariaLabel"
   >
     <UIcon :name="icon" class="w-7 h-7 transition-colors duration-300" />
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup lang="ts">

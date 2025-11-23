@@ -15,15 +15,15 @@ export const useHeader = () => {
   const links = computed<NavLink[]>(() => [
     {
       text: t('header.links.resume'),
-      href: Routes.home.get(),
-    },
-    {
-      text: t('header.links.contacts'),
-      href: Routes.contacts.get(),
+      href: Routes.resume.get(),
     },
     {
       text: t('header.links.skills'),
       href: Routes.skills.get(),
+    },
+    {
+      text: t('header.links.contacts'),
+      href: Routes.contacts.get(),
     },
   ]);
 

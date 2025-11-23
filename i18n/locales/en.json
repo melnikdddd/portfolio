@@ -9,5 +9,101 @@
   },
   "error-page": {
     "home": "Go to Home"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "email": {
+      "title": "Email",
+      "description": "Feel free to reach out to me via email for any inquiries or collaboration opportunities."
+    },
+    "social": {
+      "title": "Social Media",
+      "description": "Connect with me on social media platforms or send me a message via Telegram or WhatsApp."
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "Comprehensive overview of my technical skills and expertise in full-stack web development, including frontend frameworks, backend technologies, databases, and soft skills."
+  },
+  "resume": {
+    "bio": {
+      "fullname": "Danylo Melnyk",
+      "description": "Full-Stack Developer {'|'} 3+ Years Experience {'|'} Next, Nest, Nuxt, TypeScript",
+      "work-experience": "Work Experience",
+      "education": "Education",
+      "location-title": "Location",
+      "languages-title": "Languages",
+      "present": "Present",
+      "work-types": "Work preferences",
+      "schedule-types": "Schedule"
+    },
+    "data": {
+      "workExperience": [
+        {
+          "position": "Full-Stack Developer",
+          "company": "Freelance",
+          "startDate": "Feb 2025",
+          "endDate": null
+        },
+        {
+          "position": "Full-Stack Developer",
+          "company": "Mithrill Development",
+          "startDate": "Sep 2024",
+          "endDate": "Feb 2025"
+        },
+        {
+          "position": "Full-Stack Developer",
+          "company": "Alpha Solutions",
+          "startDate": "Nov 2023",
+          "endDate": "Aug 2024"
+        },
+        {
+          "position": "Full-Stack Developer",
+          "company": "Freelance",
+          "startDate": "Apr 2022",
+          "endDate": "Sep 2023"
+        }
+      ],
+      "education": [
+        {
+          "university": "IT Step Computer Academy",
+          "degree": "Software Development",
+          "startDate": "Sep 2018",
+          "endDate": "Oct 2023"
+        },
+        {
+          "university": "Self-Education",
+          "degree": "Web Development",
+          "startDate": "May 2021",
+          "endDate": "Apr 2022"
+        },
+        {
+          "university": "Master's Degree, Zaporizhzhia Classical Private University",
+          "degree": "Faculty of Economics-Cybernetics",
+          "startDate": "Sep 2019",
+          "endDate": "Jul 2023"
+        }
+      ],
+      "location": {
+        "city": "Zaporizhzhia",
+        "country": "Ukraine",
+        "workTypes": ["Remote", "Office with relocation"],
+        "scheduleTypes": ["Full-time", "Part-time"]
+      },
+      "languages": [
+        {
+          "name": "Ukrainian",
+          "level": "Native"
+        },
+        {
+          "name": "English",
+          "level": "A2/B1"
+        }
+      ]
+    },
+    "about-me": "About Me",
+    "about-me-text": "I’m a Full-Stack Web Developer with 3+ years of experience building scalable, high-performance web applications using Next.js, Nuxt.js, and NestJS. I specialize in delivering production-ready solutions that combine modern frontend frameworks with solid backend architecture.\n\n\nKey Services:\n- Full-stack web development with Next.js, Nuxt.js, React, Vue, and NestJS\n- API development and integration: REST, GraphQL, WebSockets\n- Secure authentication and authorization: JWT, OAuth2, role-based access\n- Database design and management: PostgreSQL, MongoDB, MySQL, Prisma, TypeORM\n- Performance optimization: SSR, SSG, caching, SEO, web performance tuning\n- Modern frontend UI/UX: responsive design, component-based architecture, state management (Redux, Pinia, Zustand)\n- Collaboration in Agile/Scrum teams to deliver fast, reliable features\n\nTech Stack: TypeScript, JavaScript (ES6+), React, Vue, Next.js, Nuxt.js, NestJS, Node.js, PostgreSQL, MongoDB, Docker, AWS\n\nI’m looking for remote or hybrid roles where I can contribute to ambitious web projects, deliver clean, maintainable code, and help teams scale products efficiently.",
+    "view-all-skills": "View All Skills",
+    "contact-me-link": "Contact Me"
   }
 }

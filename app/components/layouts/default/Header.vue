@@ -5,12 +5,16 @@
     <ContentContainer class="flex items-center relative">
       <BurgerButton class="md:hidden relative z-[70]" />
       <nav class="hidden md:flex md:mx-auto gap-12" aria-label="Primary navigation">
-        <AppNavLink :href="link.href" :text="link.text" v-for="link in links" :key="link.text" />
+        <AppNavLink v-for="link in links" :key="link.text" :href="link.href" :text="link.text" />
       </nav>
-      <div class="flex gap-2 ml-auto md:ml-0" role="group" aria-label="Theme and language controls">
+      <section
+        class="flex gap-2 ml-auto md:ml-0"
+        role="group"
+        aria-label="Theme and language controls"
+      >
         <SwitchColorMode />
         <SwitchLanguage />
-      </div>
+      </section>
     </ContentContainer>
     <FullScreenNavigationMenu />
   </header>

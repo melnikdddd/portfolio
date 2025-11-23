@@ -1,12 +1,12 @@
 <template>
-  <div class="relative rounded-lg p-6 pt-8" :style="cardStyle">
-    <div
+  <section class="relative rounded-lg p-6 pt-8" :style="cardStyle">
+    <article
       v-if="title"
       class="absolute -top-3 left-4 px-3 py-1 bg-white dark:bg-gray-900"
       :style="titleStyle"
     >
       <span class="text-sm font-semibold">{{ title }}</span>
-    </div>
+    </article>
 
     <div class="card-content">
       <slot name="content" />
@@ -19,31 +19,38 @@
     >
       <slot name="footer" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script lang="ts" setup>
 interface Props {
   title?: string;
-  color: string;
+  variant?: 'primary' | 'secondary';
   borderWidth?: string;
 }
 
 const props = withDefaults(defineProps<Props>(), {
   title: '',
+  variant: 'primary',
   borderWidth: '2px',
 });
 
+const borderColorVar = computed(() =>
+  props.variant === 'primary'
+    ? 'var(--color-card-border-primary)'
+    : 'var(--color-card-border-secondary)',
+);
+
 const cardStyle = computed(() => ({
-  border: `${props.borderWidth} solid ${props.color}`,
+  border: `${props.borderWidth} solid ${borderColorVar.value}`,
 }));
 
 const titleStyle = computed(() => ({
-  color: props.color,
+  color: borderColorVar.value,
 }));
 
 const footerStyle = computed(() => ({
-  color: props.color,
+  color: borderColorVar.value,
 }));
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <NuxtLinkLocale :to="href">
-    <UButton variant="ghost" class="text-sm font-medium" v-bind="$attrs">
+    <UButton variant="ghost" class="text-sm font-medium cursor-pointer" v-bind="$attrs">
       {{ text }}
     </UButton>
   </NuxtLinkLocale>
