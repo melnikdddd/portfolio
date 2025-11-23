@@ -112,6 +112,9 @@ export default defineNuxtConfig({
   },
   vite: {
     plugins: [tailwindcss()],
+    build: {
+      sourcemap: false,
+    },
   },
   nitro: {
     devProxy: {},
