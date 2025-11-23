@@ -122,6 +122,8 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: ['/', '/info/contacts', '/info/skills'],
     },
+    compressPublicAssets: true,
+    minify: true,
   },
   routeRules: {
     '/': { prerender: true },
