@@ -154,4 +154,7 @@ export default defineNuxtConfig({
     },
   },
   debug: false,
+  icon: {
+    serverBundle: 'remote',
+  },
 });
