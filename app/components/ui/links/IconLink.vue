@@ -6,7 +6,9 @@
     class="icon-link inline-flex items-center justify-center w-11 h-11 rounded-full transition-all duration-300 hover:scale-110"
     :aria-label="ariaLabel"
   >
-    <UIcon :name="icon" class="w-7 h-7 transition-colors duration-300" />
+    <ClientOnly>
+      <UIcon :name="icon" class="w-7 h-7 transition-colors duration-300" />
+    </ClientOnly>
   </NuxtLink>
 </template>
 
