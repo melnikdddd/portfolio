@@ -121,6 +121,8 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: ['/', '/info/contacts', '/info/skills'],
+      failOnError: false,
+      ignore: ['/_vercel/image'],
     },
     compressPublicAssets: true,
     minify: true,
